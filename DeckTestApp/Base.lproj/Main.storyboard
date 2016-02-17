@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="c8J-xj-HM2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--First Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstScreenViewController" customModule="DeckTestApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9Z-0s-v5H">
+                                <rect key="frame" x="234" y="278" width="131" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
+                                <state key="normal" title="Open modal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Qzw-A1-erv" kind="show" identifier="ShowSecondScreenView" id="nRf-ra-VIR"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some text here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40o-Zl-Myj">
+                                <rect key="frame" x="100" y="135" width="400" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="40o-Zl-Myj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuI-pH-Fp5"/>
+                            <constraint firstItem="J9Z-0s-v5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eyM-y5-1gn"/>
+                            <constraint firstItem="J9Z-0s-v5H" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fQA-UM-HCa"/>
+                            <constraint firstItem="40o-Zl-Myj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="nsi-ml-456"/>
+                            <constraint firstAttribute="width" secondItem="40o-Zl-Myj" secondAttribute="width" multiplier="1.5" id="v9K-up-q1i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SVX-Cn-Oa3"/>
+                    <connections>
+                        <outlet property="myTextField" destination="40o-Zl-Myj" id="H32-2h-Vt6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="278"/>
+        </scene>
+        <!--Second Screen View Controller-->
+        <scene sceneID="6RJ-sW-qtA">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Qzw-A1-erv" customClass="SecondScreenViewController" customModule="DeckTestApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cjd-I2-ClF"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Kh-nK-z3a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KHG-Qa-N93">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuv-B1-ujR">
+                                <rect key="frame" x="100" y="440" width="400" height="20.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xc1-Ma-ej0" userLabel="MyTextViewContainer">
+                                <rect key="frame" x="20" y="64" width="560" height="300"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" indicatorStyle="black" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zwS-Kn-NUr">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="300"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. </string>
+                                                <attributes>
+                                                    <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zwS-Kn-NUr" firstAttribute="top" secondItem="Xc1-Ma-ej0" secondAttribute="top" id="PYG-z0-cQd"/>
+                                    <constraint firstAttribute="bottom" secondItem="zwS-Kn-NUr" secondAttribute="bottom" id="TSV-he-PQV"/>
+                                    <constraint firstItem="zwS-Kn-NUr" firstAttribute="leading" secondItem="Xc1-Ma-ej0" secondAttribute="leading" id="gIZ-AK-q30"/>
+                                    <constraint firstAttribute="trailing" secondItem="zwS-Kn-NUr" secondAttribute="trailing" id="mpz-dX-NfN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Kuv-B1-ujR" secondAttribute="width" multiplier="1.5" id="Lcf-dn-R6S"/>
+                            <constraint firstItem="Kuv-B1-ujR" firstAttribute="centerX" secondItem="KHG-Qa-N93" secondAttribute="centerX" id="P3X-Tg-RH3"/>
+                            <constraint firstItem="Xc1-Ma-ej0" firstAttribute="top" secondItem="Cjd-I2-ClF" secondAttribute="bottom" id="Phh-aL-Udl"/>
+                            <constraint firstItem="Xc1-Ma-ej0" firstAttribute="leading" secondItem="KHG-Qa-N93" secondAttribute="leadingMargin" id="grG-7o-iyo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xc1-Ma-ej0" secondAttribute="trailing" id="hYm-c4-wCV"/>
+                            <constraint firstItem="Kuv-B1-ujR" firstAttribute="centerY" secondItem="KHG-Qa-N93" secondAttribute="centerY" multiplier="1.5" id="jfy-oa-jZv"/>
+                            <constraint firstAttribute="height" secondItem="Xc1-Ma-ej0" secondAttribute="height" multiplier="2" id="lZp-Rj-uWp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myLabel" destination="Kuv-B1-ujR" id="qQ2-19-8ys"/>
+                        <outlet property="myTextView" destination="zwS-Kn-NUr" id="iX7-Pj-e6o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2x-jr-fm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wpa-ZU-dSn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c8J-xj-HM2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RrH-gC-JL3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FE9-Fo-JIO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isi-jU-1TO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-344" y="278"/>
+        </scene>
+    </scenes>
+</document>
